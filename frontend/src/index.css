@@ -1,0 +1,11 @@
+/* The site is not responsive in teh nature */
+:root {
+    --main-bg-color1: #1e1e1e;
+    --main-bg-color2: #fefefe;
+}
+
+body {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}

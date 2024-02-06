@@ -1,0 +1,238 @@
+/* The site is not responsive in teh nature */
+
+button {
+    cursor: pointer;
+    color: var(--main-bg-color2);
+    padding: 8px 12px;
+    border: none;
+    background: var(--main-bg-color1);
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    gap: 5px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-block: 15px;
+}
+
+.search-box input[type="text"] {
+    outline: none;
+    border: 1px solid var(--main-bg-color1);
+    padding: 8px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.titles {
+    display: flex;
+    gap: 10px;
+    padding-block: 5px;
+}
+
+.titles .products {
+    width: 80%;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 2px solid var(--main-bg-color1);
+}
+
+.titles .cart {
+    width: 19%;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 2px solid var(--main-bg-color1);
+}
+
+
+.app-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.product-list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    align-items: stretch;
+    grid-gap: 10px;
+}
+
+.product-list .product-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.product-list .product-card.disabled {
+    background: #00000017;
+}
+
+.product-list .product-card img {
+    height: 75px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-list .product-card .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product-list .product-card button {
+    padding: 8px;
+}
+
+.product-list .product-card.disabled button {
+    background: #00000096;
+    cursor: not-allowed;
+}
+
+.product-list .product-card .product-details span {
+    word-break: break-word;
+}
+
+.cart-actions {
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-block: 5px;
+}
+
+.cart-actions .cart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 5px;
+
+}
+
+.cart-actions .cart .product-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.cart-actions .cart .product-card.disabled {
+    background: #00000017;
+}
+
+.cart-actions .cart .product-card img {
+    width: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-actions .cart .product-card .product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    font-size: 14px;
+}
+
+.cart-actions .cart .product-card .product-details button {
+    height: 25px;
+    width: 35px;
+    padding: 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cart-actions .cart .product-card.disabled .product-details button {
+    background: #00000096;
+    cursor: not-allowed;
+}
+
+.cart-actions .cart-details {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cart-actions .cart-details.empty {
+    border: none;
+    text-align: center;
+}
+
+.cart-actions .cart-details p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5px;
+}
+
+.cart-actions .cart-details p:nth-child(2) {
+    border-bottom: 1px solid var(--main-bg-color1);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.checkout-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.checkout-box h4 {
+    border-bottom: 1px solid var(--main-bg-color1);
+    margin: 0;
+}
+
+.checkout-box form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.checkout-box form input[type="text"] {
+    outline: none;
+    border: 1px solid var(--main-bg-color1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.checkout-box form input[type="text"]:focus-visible {
+    outline: none;
+}
+
+.qr-code-box {
+    height: auto;
+    margin: 0 auto;
+    max-width: 100px;
+    width: 100%;
+}
+
+.downloads {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
